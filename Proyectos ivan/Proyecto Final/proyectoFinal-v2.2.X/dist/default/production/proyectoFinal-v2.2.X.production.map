@@ -1,0 +1,237 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Thu Jun 09 21:13:57 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x0001ae
+                   .org_2       code   0x000100    program   0x0001c0
+                   .org_3       code   0x000200    program   0x0001e0
+                   .org_4       code   0x000300    program   0x0001e0
+                   .org_5       code   0x000400    program   0x000080
+.config_2007_BUILD/DEFAULT/PRODUCTION/PROYECT       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/PROYECT       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x0000da      
+                            0x000100    0x0001df      
+                            0x000200    0x0002ef      
+                            0x000300    0x0003ef      
+                            0x000400    0x00043f      
+                            0x002007    0x002008      
+            988 out of 8455 program addresses used, program memory utilization is 11%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                        A   0x0002cc    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                   AASCII   0x000054    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                AMPERSAND   0x00017c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                   ARROBA   0x0002c0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      AST   0x0001a4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    BARRA   0x0001d6    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       BE   0x0002d8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+             BORRARPUNTOS   0x000047    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               BUSCARFILA   0x000100    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+            CAMBIOBANDERA   0x000060    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               CAMBIOFILA   0x0000d5    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                CARGARBIT   0x0000c5    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+           CARGARCARACTER   0x0000c3    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+              CARGARDATOS   0x0000b6    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       CE   0x0002e4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     CERO   0x000200    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    CINCO   0x00023c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     COMA   0x0001b8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 COMILLAD   0x000154    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                 COMILLAS   0x000186    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+         CONTROLPRINCIPAL   0x000041    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                   CUATRO   0x000230    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      DEE   0x000300    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      DOS   0x000218    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    DOSPT   0x000278    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        E   0x00030c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      EFE   0x000318    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                ENVIARBIT   0x0000c8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      ERE   0x0003a8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      ESE   0x0003b4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                  ESPACIO   0x000140    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     EXCL   0x00014a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA0   0x000430    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA1   0x000432    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA2   0x000434    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA3   0x000436    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA4   0x000438    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA5   0x00043a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA6   0x00043c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA7   0x00043e    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                FINCUENTA   0x000068    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 FINENVIO   0x0000cb    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+              FININCHORAL   0x0000ab    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                        G   0x000324    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        H   0x000330    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+            HABILITARFILA   0x000424    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        I   0x00033c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    IGUAL   0x00029c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+               INCCENTENA   0x000088    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                INCDECENA   0x000082    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 INCHORAH   0x0000b0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 INCHORAL   0x0000a0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               INCMINUTOH   0x00009a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               INCMINUTOL   0x000094    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+           INCREMENTOHORA   0x00006a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                INCUNIDAD   0x00007c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 INCUNMIL   0x00008e    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+           INTERRUPCIONES   0x00004a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                        J   0x000348    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        K   0x000354    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        L   0x000360    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        M   0x00036c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      MAS   0x0001ae    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    MAYOR   0x0002a8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    MENOR   0x000290    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    MENOS   0x0001c2    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        N   0x000378    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    NUEVE   0x00026c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      NUM   0x00015e    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        O   0x000384    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     OCHO   0x000260    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+             PARENTESISAB   0x000190    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+            PARENTESISCER   0x00019a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       PE   0x000390    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     PESO   0x000168    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                PONERCERO   0x0000d1    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+              PONERPUNTOS   0x000044    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 PONERUNO   0x0000d3    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+               PORCENTAJE   0x000172    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                PREGUNTAC   0x0002b4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                   PTCOMA   0x000284    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    PUNTO   0x0001cc    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        Q   0x00039c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     SEIS   0x000248    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    SIETE   0x000254    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        T   0x0003c0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    TABLA   0x000104    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    TIMER   0x00004c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                     TRES   0x000224    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        U   0x0003cc    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      UNO   0x00020c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        V   0x0003d8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       WW   0x0003e4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        X   0x000400    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        Y   0x00040c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     ZETA   0x000418    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+         CONTROLPRINCIPAL   0x000041    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+              PONERPUNTOS   0x000044    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+             BORRARPUNTOS   0x000047    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+           INTERRUPCIONES   0x00004a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                    TIMER   0x00004c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                   AASCII   0x000054    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+            CAMBIOBANDERA   0x000060    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                FINCUENTA   0x000068    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+           INCREMENTOHORA   0x00006a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                INCUNIDAD   0x00007c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                INCDECENA   0x000082    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               INCCENTENA   0x000088    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 INCUNMIL   0x00008e    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               INCMINUTOL   0x000094    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+               INCMINUTOH   0x00009a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 INCHORAL   0x0000a0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+              FININCHORAL   0x0000ab    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+                 INCHORAH   0x0000b0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\proyectoFinal-v2.2.asm
+              CARGARDATOS   0x0000b6    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+           CARGARCARACTER   0x0000c3    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                CARGARBIT   0x0000c5    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                ENVIARBIT   0x0000c8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                 FINENVIO   0x0000cb    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                PONERCERO   0x0000d1    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                 PONERUNO   0x0000d3    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+               CAMBIOFILA   0x0000d5    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+               BUSCARFILA   0x000100    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    TABLA   0x000104    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                  ESPACIO   0x000140    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     EXCL   0x00014a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                 COMILLAD   0x000154    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      NUM   0x00015e    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     PESO   0x000168    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+               PORCENTAJE   0x000172    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                AMPERSAND   0x00017c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                 COMILLAS   0x000186    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+             PARENTESISAB   0x000190    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+            PARENTESISCER   0x00019a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      AST   0x0001a4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      MAS   0x0001ae    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     COMA   0x0001b8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    MENOS   0x0001c2    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    PUNTO   0x0001cc    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    BARRA   0x0001d6    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     CERO   0x000200    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      UNO   0x00020c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      DOS   0x000218    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     TRES   0x000224    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                   CUATRO   0x000230    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    CINCO   0x00023c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     SEIS   0x000248    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    SIETE   0x000254    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     OCHO   0x000260    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    NUEVE   0x00026c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    DOSPT   0x000278    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                   PTCOMA   0x000284    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    MENOR   0x000290    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    IGUAL   0x00029c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    MAYOR   0x0002a8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                PREGUNTAC   0x0002b4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                   ARROBA   0x0002c0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        A   0x0002cc    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       BE   0x0002d8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       CE   0x0002e4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      DEE   0x000300    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        E   0x00030c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      EFE   0x000318    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        G   0x000324    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        H   0x000330    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        I   0x00033c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        J   0x000348    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        K   0x000354    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        L   0x000360    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        M   0x00036c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        N   0x000378    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        O   0x000384    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       PE   0x000390    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        Q   0x00039c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      ERE   0x0003a8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                      ESE   0x0003b4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        T   0x0003c0    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        U   0x0003cc    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        V   0x0003d8    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                       WW   0x0003e4    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        X   0x000400    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                        Y   0x00040c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                     ZETA   0x000418    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+            HABILITARFILA   0x000424    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA0   0x000430    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA1   0x000432    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA2   0x000434    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA3   0x000436    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA4   0x000438    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA5   0x00043a    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA6   0x00043c    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+                    FILA7   0x00043e    program     static D:\Electronica Digital 2\Proyecto Final\proyectoFinal-v2.2.X\cargaDeDatos.inc
+
+

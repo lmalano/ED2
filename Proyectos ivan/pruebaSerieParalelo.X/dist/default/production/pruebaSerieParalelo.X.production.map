@@ -1,0 +1,53 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Tue May 24 00:27:18 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x000056
+.config_2007_BUILD/DEFAULT/PRODUCTION/PRUEBAS       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/PRUEBAS       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x00002e      
+                            0x002007    0x002008      
+            48 out of 8455 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                 DATOALTO   0x000020    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                 DATOBAJO   0x000022    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+               ENVIARDATO   0x00001b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                     FIN1   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+              INCCONTADOR   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+             INTERRUPCION   0x000013    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                MOVERDATO   0x000024    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                PRINCIPAL   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                PRINCIPAL   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+             INTERRUPCION   0x000013    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                     FIN1   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+               ENVIARDATO   0x00001b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                 DATOALTO   0x000020    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                 DATOBAJO   0x000022    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+                MOVERDATO   0x000024    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+              INCCONTADOR   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaSerieParalelo.X\pruebaSerieParalelo.asm
+
+

@@ -1,0 +1,27 @@
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 99 : Found directive in column 1. (org)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 101 : Found directive in column 1. (org)
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 114 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 115 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 117 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 119 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 122 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 124 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 126 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 127 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 128 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 129 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 130 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 132 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 134 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 136 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 321 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 507 : Using default destination of 1 (file).
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\USOTECLADO.INC 1 : Found directive in column 1. (org)
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 4 : Using default destination of 1 (file).
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 28 : Using default destination of 1 (file).
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 43 : Using default destination of 1 (file).
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 58 : Using default destination of 1 (file).
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 311 : Found directive in column 1. (org)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 592 : Found directive in column 1. (org)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\CARGADEDATOS.INC 875 : Found directive in column 1. (org)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTO FINAL\PROYECTOFINAL-V5.0.X\PROYECTOFINAL-V5.0.ASM 603 : Found directive in column 1. (end)

@@ -1,0 +1,39 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sat May 07 16:32:23 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000005    program   0x000012
+.config_2007_BUILD/DEFAULT/PRODUCTION/PRUEBAB       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/PRUEBAB       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000005    0x00000d      
+                            0x002007    0x002008      
+            14 out of 8455 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    BUCLE   0x000009    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebabasica.X\pruebabasica.asm
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebabasica.X\pruebabasica.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebabasica.X\pruebabasica.asm
+                    BUCLE   0x000009    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebabasica.X\pruebabasica.asm
+
+

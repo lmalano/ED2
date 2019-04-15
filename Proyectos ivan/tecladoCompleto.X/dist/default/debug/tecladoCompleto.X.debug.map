@@ -1,0 +1,101 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Tue Jun 14 20:00:09 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x00018c
+.config_2007_BUILD/DEFAULT/DEBUG/TECLADOCOMPL       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/DEBUG/TECLADOCOMPL       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x0000c9      
+                            0x002007    0x002008      
+            203 out of 8455 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      AST   0x000080    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B4   0x0000b6    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B5   0x0000bb    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B6   0x0000c0    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B7   0x0000c5    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     BIT1   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     BIT2   0x000033    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     BIT3   0x00003d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                   BUCLE1   0x000099    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                   BUCLE2   0x000097    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     CERO   0x00007b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    CINCO   0x000062    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 CONTADOR   0x0000b0    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                   CUATRO   0x00005d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      DOS   0x000053    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      FIN   0x00004a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     FIN2   0x0000ae    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+             INTERRUPCION   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 MOVERNUM   0x00009e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+             NADAAPRETADO   0x000047    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    NUEVE   0x000076    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      NUM   0x000085    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     OCHO   0x000071    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                PRINCIPAL   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 REFRESCO   0x0000a5    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                  RETARDO   0x000095    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     SEIS   0x000067    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    SIETE   0x00006c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    TABLA   0x00008a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                  TECLADO   0x000026    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     TRES   0x000058    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      UNO   0x00004e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                PRINCIPAL   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+             INTERRUPCION   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                  TECLADO   0x000026    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     BIT1   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     BIT2   0x000033    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     BIT3   0x00003d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+             NADAAPRETADO   0x000047    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      FIN   0x00004a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      UNO   0x00004e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      DOS   0x000053    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     TRES   0x000058    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                   CUATRO   0x00005d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    CINCO   0x000062    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     SEIS   0x000067    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    SIETE   0x00006c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     OCHO   0x000071    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    NUEVE   0x000076    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     CERO   0x00007b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      AST   0x000080    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                      NUM   0x000085    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                    TABLA   0x00008a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                  RETARDO   0x000095    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                   BUCLE2   0x000097    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                   BUCLE1   0x000099    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 MOVERNUM   0x00009e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 REFRESCO   0x0000a5    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                     FIN2   0x0000ae    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                 CONTADOR   0x0000b0    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B4   0x0000b6    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B5   0x0000bb    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B6   0x0000c0    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+                       B7   0x0000c5    program     static D:\Electronica Digital 2\Proyectos de ejemplo\tecladoCompleto.X\tecladoCompleto.asm
+
+

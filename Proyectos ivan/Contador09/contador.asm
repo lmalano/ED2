@@ -1,0 +1,27 @@
+LIST p=16F84A
+INCLUDE <P16F84A.INC>
+__CONFIG _CP_OFF & _WDT_OFF & _PWRTE_ON & _XT_OSC
+
+CBLOCK 0x0c
+
+ENDC
+
+#DEFINE Display PORTB
+org 0
+
+BSF STATUS,RP0
+CLRF Display ; Salida
+BCF STATUS,RP0
+
+INICIO
+
+		MOVLW B'11111001'
+		MOVWF Display
+		call Retardo_200ms
+		goto INICIO
+
+
+
+
+include<Retardos.inc>
+END

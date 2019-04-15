@@ -1,0 +1,59 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sat Apr 23 14:49:49 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00005a
+                   .cinit    romdata   0x00002d    program   0x000004
+.config_2007_BUILD/DEFAULT/PRODUCTION/PRUEBAP       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/PRUEBAP       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00002e      
+                            0x002007    0x002008      
+            49 out of 8455 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     BIT4   0x00000d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT5   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT6   0x000015    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT7   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   INICIO   0x000001    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET4   0x00001f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET5   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET6   0x000027    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET7   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET4   0x00001d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET5   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET6   0x000025    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET7   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000001    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT4   0x00000d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT5   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT6   0x000015    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     BIT7   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET4   0x00001d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET4   0x00001f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET5   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET5   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET6   0x000025    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET6   0x000027    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                     SET7   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+                   RESET7   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebaportb.X\pruebaportb.asm
+
+

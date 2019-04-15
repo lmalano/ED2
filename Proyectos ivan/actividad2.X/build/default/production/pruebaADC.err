@@ -1,0 +1,89 @@
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 20 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 22 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 23 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 24 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 25 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 26 : Executable code and data must be defined in an appropriate section
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 28 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 28 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 29 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 30 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 31 : Executable code and data must be defined in an appropriate section
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 36 : Labels must be defined in a code or data section when making an object file
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 37 : Found label after column 1. (CENTENAS)
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 37 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 38 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 39 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 40 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 41 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 41 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 42 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 43 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 43 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 44 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 44 : Executable code and data must be defined in an appropriate section
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 45 : Found label after column 1. (DECENAS)
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 45 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 46 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 47 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 48 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 49 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 49 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 50 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 51 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 51 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 52 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 52 : Executable code and data must be defined in an appropriate section
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 53 : Found label after column 1. (UNIDADES)
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 53 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 54 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 55 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 56 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 56 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 57 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 57 : Executable code and data must be defined in an appropriate section
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 58 : Using default destination of 1 (file).
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 58 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 59 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 59 : Executable code and data must be defined in an appropriate section
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 63 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 64 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 65 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 66 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 66 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 67 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 68 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 69 : Executable code and data must be defined in an appropriate section
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 70 : Using default destination of 1 (file).
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 70 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 71 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 71 : Executable code and data must be defined in an appropriate section
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 73 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 74 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 75 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 76 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 77 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 78 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 79 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 80 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 80 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 81 : Executable code and data must be defined in an appropriate section
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 83 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 84 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 85 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 86 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 87 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 88 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 89 : Executable code and data must be defined in an appropriate section
+Error[151]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 90 : Operand contains unresolvable labels or is too complex
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 90 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 91 : Executable code and data must be defined in an appropriate section
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 93 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 94 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 95 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 96 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 97 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 98 : Executable code and data must be defined in an appropriate section
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 99 : Executable code and data must be defined in an appropriate section
+Error[150]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 102 : Labels must be defined in a code or data section when making an object file
+Error[152]   D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ACTIVIDAD2.X\PRUEBAADC.ASM 103 : Executable code and data must be defined in an appropriate section

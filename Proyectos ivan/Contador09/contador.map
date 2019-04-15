@@ -1,0 +1,96 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Wed Jan 27 16:29:01 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x00009c
+  .config_2007_CONTADOR.O       code   0x002007    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00004d      
+                            0x002007    0x002007      
+            79 out of 1094 program addresses used, program memory utilization is 7%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000003    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\contador.asm
+    R1Decima_BucleExterno   0x000044    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+   R1Decima_BucleExterno2   0x000042    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+    R1Decima_BucleInterno   0x000046    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        R1ms_BucleExterno   0x00002e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        R1ms_BucleInterno   0x000030    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            RetardoMicros   0x00001a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        Retardo_100micros   0x000014    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Retardo_100ms   0x000020    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+         Retardo_10micros   0x000007    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+             Retardo_10ms   0x000026    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_10s   0x000038    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+          Retardo_1Decima   0x000041    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_1ms   0x00002c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+               Retardo_1s   0x00003e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        Retardo_200micros   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Retardo_200ms   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+         Retardo_20micros   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+             Retardo_20ms   0x000024    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_20s   0x000036    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_2ms   0x00002a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+               Retardo_2s   0x00003c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+          Retardo_4micros   0x00000d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        Retardo_500micros   0x00000e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Retardo_500ms   0x000040    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+         Retardo_50micros   0x000016    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+             Retardo_50ms   0x000022    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+          Retardo_5micros   0x00000c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_5ms   0x000028    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+               Retardo_5s   0x00003a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardos_ms   0x00002d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Rmicros_Bucle   0x00001b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000003    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\contador.asm
+         Retardo_10micros   0x000007    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+          Retardo_5micros   0x00000c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+          Retardo_4micros   0x00000d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        Retardo_500micros   0x00000e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        Retardo_200micros   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        Retardo_100micros   0x000014    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+         Retardo_50micros   0x000016    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+         Retardo_20micros   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            RetardoMicros   0x00001a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Rmicros_Bucle   0x00001b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Retardo_200ms   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Retardo_100ms   0x000020    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+             Retardo_50ms   0x000022    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+             Retardo_20ms   0x000024    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+             Retardo_10ms   0x000026    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_5ms   0x000028    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_2ms   0x00002a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_1ms   0x00002c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardos_ms   0x00002d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        R1ms_BucleExterno   0x00002e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+        R1ms_BucleInterno   0x000030    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_20s   0x000036    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+              Retardo_10s   0x000038    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+               Retardo_5s   0x00003a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+               Retardo_2s   0x00003c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+               Retardo_1s   0x00003e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+            Retardo_500ms   0x000040    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+          Retardo_1Decima   0x000041    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+   R1Decima_BucleExterno2   0x000042    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+    R1Decima_BucleExterno   0x000044    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+    R1Decima_BucleInterno   0x000046    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Contador09\Retardos.inc
+
+

@@ -1,0 +1,51 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Mon Apr 11 02:21:53 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000005    program   0x0000ac
+.config_2007_BUILD/DEFAULT/PRODUCTION/ANIMACI       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/ANIMACI       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000005    0x00005a      
+                            0x002007    0x002008      
+            91 out of 8455 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   BUCLE1   0x00000b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   BUCLE2   0x000009    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   BUCLE3   0x000007    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   INICIO   0x000053    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                     LEDS   0x000056    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                  RETARDO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   SHOW_1   0x000012    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   SHOW_2   0x00003a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  RETARDO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   BUCLE3   0x000007    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   BUCLE2   0x000009    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   BUCLE1   0x00000b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   SHOW_1   0x000012    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   SHOW_2   0x00003a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                   INICIO   0x000053    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+                     LEDS   0x000056    program     static D:\Electronica Digital 2\Proyectos de ejemplo\animacionLeds.X\animacionLeds.asm
+
+

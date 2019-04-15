@@ -1,0 +1,79 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sat May 07 17:04:05 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x0000fe
+.config_2007_BUILD/DEFAULT/PRODUCTION/TECLADO       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/TECLADO       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000082      
+                            0x002007    0x002008      
+            132 out of 8455 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                      AST   0x000070    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT0   0x00001c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT1   0x000024    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT2   0x00002e    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT3   0x000038    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     CERO   0x00006c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    CINCO   0x000058    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                 COMIENZO   0x000005    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                   CUATRO   0x000054    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      DOS   0x00004c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      FIN   0x000045    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+             INTERRUPCION   0x00001a    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     NADA   0x000017    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+             NADAAPRETADO   0x000042    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    NUEVE   0x000068    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      NUM   0x000074    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     OCHO   0x000064    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     SEIS   0x00005c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    SIETE   0x000060    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    TABLA   0x000078    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     TRES   0x000050    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      UNO   0x000048    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     NADA   0x000017    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+             INTERRUPCION   0x00001a    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT0   0x00001c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT1   0x000024    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT2   0x00002e    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     BIT3   0x000038    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+             NADAAPRETADO   0x000042    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      FIN   0x000045    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      UNO   0x000048    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      DOS   0x00004c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     TRES   0x000050    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                   CUATRO   0x000054    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    CINCO   0x000058    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     SEIS   0x00005c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    SIETE   0x000060    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     OCHO   0x000064    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    NUEVE   0x000068    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                     CERO   0x00006c    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      AST   0x000070    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                      NUM   0x000074    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+                    TABLA   0x000078    program     static C:\Users\Ivan Contrera\Desktop\DIGITAL 2\teclado-previo-.X\teclado.asm
+
+

@@ -1,0 +1,5 @@
+Message[302] D:\FACU\ED2\PROYECTOS\LEDSEGUIDOS.X\LEDSEGUIDOS.ASM 19 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[207] D:\FACU\ED2\PROYECTOS\LEDSEGUIDOS.X\LEDSEGUIDOS.ASM 46 : Found label after column 1. (BUCLE1)
+Message[305] D:\FACU\ED2\PROYECTOS\LEDSEGUIDOS.X\LEDSEGUIDOS.ASM 47 : Using default destination of 1 (file).
+Message[305] D:\FACU\ED2\PROYECTOS\LEDSEGUIDOS.X\LEDSEGUIDOS.ASM 51 : Using default destination of 1 (file).
+Message[305] D:\FACU\ED2\PROYECTOS\LEDSEGUIDOS.X\LEDSEGUIDOS.ASM 55 : Using default destination of 1 (file).

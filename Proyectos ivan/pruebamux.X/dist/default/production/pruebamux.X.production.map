@@ -1,0 +1,53 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sun May 08 14:57:26 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x000080
+.config_2007_BUILD/DEFAULT/PRODUCTION/PRUEBAM       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/PRUEBAM       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000043      
+                            0x002007    0x002008      
+            69 out of 8455 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                       B4   0x000030    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B5   0x000035    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B6   0x00003a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B7   0x00003f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                 CONTADOR   0x00002a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                      FIN   0x000028    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+             INTERRUPCION   0x00001f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                   RUTINA   0x00001d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                   RUTINA   0x00001d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+             INTERRUPCION   0x00001f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                      FIN   0x000028    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                 CONTADOR   0x00002a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B4   0x000030    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B5   0x000035    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B6   0x00003a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+                       B7   0x00003f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\pruebamux.X\pruebamux.asm
+
+

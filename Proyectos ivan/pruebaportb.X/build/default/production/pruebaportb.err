@@ -1,0 +1,8 @@
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 1 : Found directive in column 1. (list)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 12 : Found directive in column 1. (ORG)
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 19 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 21 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 22 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 24 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 26 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAPORTB.X\PRUEBAPORTB.ASM 82 : Found directive in column 1. (end)

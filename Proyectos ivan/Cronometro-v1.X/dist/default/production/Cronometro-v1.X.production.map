@@ -1,0 +1,67 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sat May 14 02:43:45 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x0000dc
+.config_2007_BUILD/DEFAULT/PRODUCTION/CRONOME       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/CRONOME       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000071      
+                            0x002007    0x002008      
+            115 out of 8455 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+              CAMBIOSALTO   0x000054    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D1   0x00003c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D2   0x000042    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D3   0x000048    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D4   0x00004e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                      FIN   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+               INCCENTENA   0x000066    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                INCDECENA   0x000060    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+               INCREMENTO   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                INCUNIDAD   0x00005a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                 INCUNMIL   0x00006c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+             INTERRUPCION   0x000018    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                PRINCIPAL   0x000016    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                 REFRESCO   0x000036    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                    TABLA   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                PRINCIPAL   0x000016    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+             INTERRUPCION   0x000018    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                      FIN   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+               INCREMENTO   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                    TABLA   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                 REFRESCO   0x000036    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D1   0x00003c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D2   0x000042    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D3   0x000048    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                       D4   0x00004e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+              CAMBIOSALTO   0x000054    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                INCUNIDAD   0x00005a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                INCDECENA   0x000060    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+               INCCENTENA   0x000066    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+                 INCUNMIL   0x00006c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\Cronometro-v1.X\cronometro-v1.asm
+
+

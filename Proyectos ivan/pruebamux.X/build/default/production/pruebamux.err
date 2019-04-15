@@ -1,0 +1,9 @@
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 19 : Found directive in column 1. (org)
+Warning[203] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 20 : Found opcode in column 1. (goto)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 21 : Found directive in column 1. (org)
+Warning[203] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 22 : Found opcode in column 1. (goto)
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 29 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 30 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 31 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 60 : Using default destination of 1 (file).
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\PRUEBAMUX.X\PRUEBAMUX.ASM 114 : Found directive in column 1. (end)

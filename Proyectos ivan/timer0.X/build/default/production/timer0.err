@@ -1,0 +1,6 @@
+Warning[207] C:\USERS\IVAN__000\DESKTOP\DIGITAL 2\TIMER0.X\TIMER0.ASM 11 : Found label after column 1. (w_temp)
+Warning[207] C:\USERS\IVAN__000\DESKTOP\DIGITAL 2\TIMER0.X\TIMER0.ASM 12 : Found label after column 1. (status_temp)
+Warning[207] C:\USERS\IVAN__000\DESKTOP\DIGITAL 2\TIMER0.X\TIMER0.ASM 13 : Found label after column 1. (mult)
+Message[302] C:\USERS\IVAN__000\DESKTOP\DIGITAL 2\TIMER0.X\TIMER0.ASM 26 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\IVAN__000\DESKTOP\DIGITAL 2\TIMER0.X\TIMER0.ASM 27 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[205] C:\USERS\IVAN__000\DESKTOP\DIGITAL 2\TIMER0.X\TIMER0.ASM 56 : Found directive in column 1. (end)

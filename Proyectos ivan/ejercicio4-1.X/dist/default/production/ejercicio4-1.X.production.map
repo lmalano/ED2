@@ -1,0 +1,47 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sun Apr 24 17:22:38 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x000064
+.config_2007_BUILD/DEFAULT/PRODUCTION/EJERCIC       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/EJERCIC       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000035      
+                            0x002007    0x002008      
+            55 out of 8455 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+             CODIFICACION   0x00001c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                   CONTEO   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+               INCREMENTO   0x000014    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                    ONOFF   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                    TABLA   0x00001f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                   CONTEO   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+               INCREMENTO   0x000014    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+             CODIFICACION   0x00001c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                    TABLA   0x00001f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+                    ONOFF   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\ejercicio4-1.X\ejercicio4-1.asm
+
+

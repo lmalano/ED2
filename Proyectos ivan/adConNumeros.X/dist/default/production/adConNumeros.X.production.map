@@ -1,0 +1,73 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Thu May 19 20:59:30 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000001    program   0x000004
+                   .org_1       code   0x000004    program   0x000108
+.config_2007_BUILD/DEFAULT/PRODUCTION/ADCONNU       code   0x002007    program   0x000002
+.config_2008_BUILD/DEFAULT/PRODUCTION/ADCONNU       code   0x002008    program   0x000002
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000002      
+                            0x000004    0x000087      
+                            0x002007    0x002008      
+            137 out of 8455 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+              CAMBIOSALTO   0x000077    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 CARGABCD   0x00002c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                CONVERSOR   0x000026    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D1   0x00005f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D2   0x000065    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D3   0x00006b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D4   0x000071    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                     FIN1   0x000039    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+               INCCENTENA   0x000047    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                INCDECENA   0x000041    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                INCUNIDAD   0x00003b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 INCUNMIL   0x00004d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+             INTERRUPCION   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                PRINCIPAL   0x00001b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 REFRESCO   0x000059    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                  RETARDO   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                    TABLA   0x00007d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                    TIMER   0x000053    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 COMIENZO   0x000005    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                PRINCIPAL   0x00001b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                  RETARDO   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+             INTERRUPCION   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                CONVERSOR   0x000026    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 CARGABCD   0x00002c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                     FIN1   0x000039    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                INCUNIDAD   0x00003b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                INCDECENA   0x000041    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+               INCCENTENA   0x000047    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 INCUNMIL   0x00004d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                    TIMER   0x000053    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                 REFRESCO   0x000059    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D1   0x00005f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D2   0x000065    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D3   0x00006b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                       D4   0x000071    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+              CAMBIOSALTO   0x000077    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+                    TABLA   0x00007d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\adConNumeros.X\adConNumeros.asm
+
+

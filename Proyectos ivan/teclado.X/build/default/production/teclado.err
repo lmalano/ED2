@@ -1,0 +1,15 @@
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 11 : Found label after column 1. (w_temp)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 12 : Found label after column 1. (status_temp)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 13 : Found label after column 1. (mult)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 14 : Found label after column 1. (numero)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 15 : Found label after column 1. (unidad)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 16 : Found label after column 1. (decena)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 17 : Found label after column 1. (undec)
+Warning[207] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 24 : Found label after column 1. (COMIENZO)
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 27 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 29 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 30 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 35 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 37 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 38 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\TECLADO.X\TECLADO.ASM 39 : Register in operand not in bank 0.  Ensure that bank bits are correct.

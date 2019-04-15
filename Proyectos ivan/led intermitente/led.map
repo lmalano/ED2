@@ -1,0 +1,94 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Wed Jan 13 16:34:03 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x0000a2
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000050      
+            81 out of 1094 program addresses used, program memory utilization is 7%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000003    program     static D:\Electronica Digital 2\Proyectos de ejemplo\led.asm
+    R1Decima_BucleExterno   0x000047    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+   R1Decima_BucleExterno2   0x000045    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+    R1Decima_BucleInterno   0x000049    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        R1ms_BucleExterno   0x000031    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        R1ms_BucleInterno   0x000033    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            RetardoMicros   0x00001d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        Retardo_100micros   0x000017    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Retardo_100ms   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+         Retardo_10micros   0x00000a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+             Retardo_10ms   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_10s   0x00003b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+          Retardo_1Decima   0x000044    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_1ms   0x00002f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+               Retardo_1s   0x000041    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        Retardo_200micros   0x000014    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Retardo_200ms   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+         Retardo_20micros   0x00001c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+             Retardo_20ms   0x000027    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_20s   0x000039    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_2ms   0x00002d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+               Retardo_2s   0x00003f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+          Retardo_4micros   0x000010    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        Retardo_500micros   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Retardo_500ms   0x000043    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+         Retardo_50micros   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+             Retardo_50ms   0x000025    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+          Retardo_5micros   0x00000f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_5ms   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+               Retardo_5s   0x00003d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardos_ms   0x000030    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Rmicros_Bucle   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   INICIO   0x000003    program     static D:\Electronica Digital 2\Proyectos de ejemplo\led.asm
+         Retardo_10micros   0x00000a    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+          Retardo_5micros   0x00000f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+          Retardo_4micros   0x000010    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        Retardo_500micros   0x000011    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        Retardo_200micros   0x000014    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        Retardo_100micros   0x000017    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+         Retardo_50micros   0x000019    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+         Retardo_20micros   0x00001c    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            RetardoMicros   0x00001d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Rmicros_Bucle   0x00001e    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Retardo_200ms   0x000021    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Retardo_100ms   0x000023    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+             Retardo_50ms   0x000025    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+             Retardo_20ms   0x000027    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+             Retardo_10ms   0x000029    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_5ms   0x00002b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_2ms   0x00002d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_1ms   0x00002f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardos_ms   0x000030    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        R1ms_BucleExterno   0x000031    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+        R1ms_BucleInterno   0x000033    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_20s   0x000039    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+              Retardo_10s   0x00003b    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+               Retardo_5s   0x00003d    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+               Retardo_2s   0x00003f    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+               Retardo_1s   0x000041    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+            Retardo_500ms   0x000043    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+          Retardo_1Decima   0x000044    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+   R1Decima_BucleExterno2   0x000045    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+    R1Decima_BucleExterno   0x000047    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+    R1Decima_BucleInterno   0x000049    program     static D:\Electronica Digital 2\Proyectos de ejemplo\RETARDOS.inc
+
+

@@ -1,0 +1,1099 @@
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00001   list p=16f887
+                      00002 #include "p16f887.inc"
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ; Build date : Feb 01 2016
+                      00005 ;  MPASM PIC16F887 processor include
+                      00006 ; 
+                      00007 ;  (c) Copyright 1999-2016 Microchip Technology, All rights reserved
+                      00008 ;==========================================================================
+                      00009 
+                      00810         LIST
+                      00003 
+                      00004 ; CONFIG1
+                      00005 ; __config 0xFFE1
+2007   27E1           00006  __CONFIG _CONFIG1, _FOSC_XT & _WDTE_OFF & _PWRTE_ON & _MCLRE_ON & _CP_OFF & _CPD_OFF & _BOREN_ON & _IES
+                            O_ON & _FCMEN_OFF & _LVP_OFF
+                      00007 ; CONFIG2
+                      00008 ; __config 0xFFFF
+2008   3FFF           00009  __CONFIG _CONFIG2, _BOR4V_BOR40V & _WRT_OFF
+                      00010  
+                      00011 ;CONSTANTES
+                      00012 
+  00000002            00013 dato equ d'2'
+  00000001            00014 clk equ d'1'
+  00000003            00015 latch equ d'3'
+  00000005            00016 caracteres equ d'5'
+  00000006            00017 anchoChar equ d'6'
+  00000006            00018 carga equ d'6'
+                      00019 
+                      00020  
+                      00021  
+                      00022 ;REGISTROS
+                      00023  
+  00000020            00024 numChar equ 0x20
+  00000021            00025 filAux equ 0x21
+  00000022            00026 numBits equ 0x22
+  00000023            00027 numFila equ 0x23
+  00000024            00028 char5 equ 0x24
+  00000025            00029 char4 equ 0x25
+  00000026            00030 char3 equ 0x26
+  00000027            00031 char2 equ 0x27
+  00000028            00032 char1 equ 0x28
+  00000029            00033 mult equ 0x29
+                      00034 
+                      00035 
+                      00036  
+Warning[205]: Found directive in column 1. (org)
+                      00037 org 0x00
+0000   2???           00038     goto COMIENZO
+Warning[205]: Found directive in column 1. (org)
+                      00039 org 0x04
+0004   2???           00040     goto INTERRUPCIONES
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00041     
+0005                  00042 COMIENZO
+0005   30A0           00043     movlw b'10100000'
+0006   008B           00044     movwf INTCON ; configuro las interrupciones por desbordamiento de timer 0
+0007   3006           00045     movlw carga
+0008   0081           00046     movwf TMR0 ; cargo timer con 6
+0009   1683           00047     bsf STATUS,RP0 ; banco 1
+000A   30D1           00048     movlw b'11010001'
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000B   0081           00049     movwf OPTION_REG ; configuro flancos y prescaler (x4)
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000C   0188           00050     clrf TRISD ; puerto D como salida
+Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
+000D   0187           00051     clrf TRISC ; puerto C como salida
+000E   1283           00052     bcf STATUS, RP0 ; banco 0
+000F   30FF           00053     movlw 0xFF
+0010   0088           00054     movwf PORTD ; todas las salidas en alto para inhabilitar el display
+0011   0187           00055     clrf PORTC ; todas las salidas en bajo por defecto
+0012   3032           00056     movlw "2"
+0013   00A4           00057     movwf char5
+0014   3037           00058     movlw "7"
+0015   00A5           00059     movwf char4
+0016   3035           00060     movlw "5"
+0017   00A6           00061     movwf char3
+0018   3033           00062     movlw "3"
+0019   00A7           00063     movwf char2
+001A   3030           00064     movlw "0"
+001B   00A8           00065     movwf char1
+001C   3005           00066     movlw caracteres
+001D   00A0           00067     movwf numChar
+001E   01A1           00068     clrf filAux
+001F   01A3           00069     clrf numFila
+0020   3006           00070     movlw anchoChar
+0021   00A2           00071     movwf numBits
+0022   3014           00072     movlw d'20'
+0023   00A9           00073     movwf mult
+                      00074     
+0024                  00075 ESPERA
+0024   0000           00076     nop
+0025   2???           00077     goto ESPERA
+                      00078     
+0026                  00079 INTERRUPCIONES
+0026   3006           00080     movlw carga
+0027   0081           00081     movwf TMR0
+0028   3024           00082     movlw 0x24
+0029   0084           00083     movwf FSR
+002A   2???           00084     call CARGARDATOS
+002B   110B           00085     bcf INTCON,T0IF
+002C   0009           00086     retfie
+                      00087 
+                      00088 #include "cargaDatosAux.inc"
+002D                  00001 CARGARDATOS
+002D   2???           00002     call CARGARCARACTER ;reemplaza a CARGARFILA
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+002E   0A84           00003     incf FSR,1 ;apunto a la siguiente direccion para cargar la siguiente fila del siguiente caracter
+Message[305]: Using default destination of 1 (file).
+002F   0BA0           00004     decfsz numChar ; cargué todos los caracteres?
+0030   2???           00005     goto CARGARDATOS ; ni
+0031   30FF           00006     movlw 0xFF
+0032   0088           00007     movwf PORTD ; si. pongo en alto la fila activa para inhabilitarla y cargar los datos de la fila sigu
+                            iente
+0033   1587           00008     bsf PORTC,latch ;en alto el latch para mostrar los datos en los registros
+0034   2???           00009     call HABILITARFILA ; habilito la fila segun el numFila actualizado
+0035   1187           00010     bcf PORTC,latch ; en bajo el latch para la espera de los nuevos datos
+0036   2???           00011     call CAMBIOFILA ; modifico el valor del registro numFila
+0037   3005           00012     movlw caracteres
+0038   00A0           00013     movwf numChar ; cargo la cantidad de caracteres a mostrar en pantalla
+0039   0008           00014     return
+                      00015     
+003A                  00016 CARGARCARACTER
+003A   2???           00017     call BUSCARFILA
+003B   00A1           00018     movwf filAux ; cargo la fila de cierto caracter que me retorna en w
+003C                  00019 CARGARBIT
+003C   1C21           00020     btfss filAux,0 ;es cero el primer bit de filAux?
+003D   2???           00021     goto PONERCERO ;si
+003E   2???           00022     goto PONERUNO ;no
+003F                  00023 ENVIARBIT ; da el pulso para que ingrese el dato al registro
+003F   1087           00024     bcf PORTC,clk ;pongo en bajo el clock en espera al ingreso del nuevo dato
+0040   0000           00025     nop ;espera prudente
+0041   1487           00026     bsf PORTC,clk ; se ingresa el dato al registro
+0042                  00027 FINENVIO
+0042   0CA1           00028     rrf filAux,1 ; muevo un bit a la derecha para enviar el siguiente bit
+Message[305]: Using default destination of 1 (file).
+0043   0BA2           00029     decfsz numBits ; ¿recorri todos los bits del ancho de la palabra?
+0044   2???           00030     goto CARGARBIT ; no
+0045   3006           00031     movlw anchoChar ;si, vuelvo a cargar el contador numBits con la cantidad anchoChar y salgo de la sub
+                            rutina
+0046   00A2           00032     movwf numBits
+0047   0008           00033     return
+                      00034     
+0048                  00035 PONERCERO
+0048   1107           00036     bcf PORTC,dato ; pongo en cero el bit saliente de datos
+0049   2???           00037     goto ENVIARBIT
+                      00038     
+004A                  00039 PONERUNO
+004A   1507           00040     bsf PORTC,dato ; pongo en uno el bit saliente de datos
+004B   2???           00041     goto ENVIARBIT
+                      00042     
+004C                  00043 CAMBIOFILA
+Message[305]: Using default destination of 1 (file).
+004C   0AA3           00044     incf numFila
+004D   3008           00045     movlw d'8'
+004E   0623           00046     xorwf numFila,0
+004F   1903           00047     btfsc STATUS,Z
+0050   01A3           00048     clrf numFila
+0051   0008           00049     return
+                      00050     
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0052                  00051 BUSCARFILA
+0052   3030           00052     movlw d'48'
+0053   0200           00053     subwf INDF,0 ; resto 32 al valor de char 1,2,3,4 o 5 para poder acceder a una tabla (en ASCII, 16 = 
+                            48 , si se resta, accederemos al caracter nro 0 (el 0))
+0054                  00054 TABLA
+Message[305]: Using default destination of 1 (file).
+0054   0782           00055     addwf PCL ; le sumo el resultado de la resta a PCL para acceder a un determinado valor de la tabla
+0055   2???           00056     goto CERO           ; "0"
+0056   2???           00057     goto UNO            ; "1"
+0057   2???           00058     goto DOS            ; "2"
+0058   2???           00059     goto TRES
+0059   2???           00060     goto CUATRO
+005A   2???           00061     goto CINCO
+005B   2???           00062     goto SEIS
+005C   2???           00063     goto SIETE
+005D   2???           00064     goto OCHO
+005E   2???           00065     goto NUEVE
+005F   2???           00066     goto DOSPT
+0060   2???           00067     goto PTCOMA
+0061   2???           00068     goto MENOR
+0062   2???           00069     goto IGUAL
+                      00070     
+                      00071     
+                      00072     
+                      00073     
+0063                  00074 CERO
+0063   0823           00075     movf numFila,0
+0064   0782           00076     addwf PCL,1
+0065   340E           00077     retlw b'00001110'
+0066   3413           00078     retlw b'00010011'
+0067   3413           00079     retlw b'00010011'
+0068   3415           00080     retlw b'00010101'
+0069   3419           00081     retlw b'00011001'
+006A   3419           00082     retlw b'00011001'
+006B   3419           00083     retlw b'00011001'
+006C   340E           00084     retlw b'00001110'
+                      00085     
+006D                  00086 UNO
+006D   0823           00087     movf numFila,0
+006E   0782           00088     addwf PCL,1
+006F   3403           00089     retlw b'00000011'
+0070   3407           00090     retlw b'00000111'
+0071   340F           00091     retlw b'00001111'
+0072   341B           00092     retlw b'00011011'
+0073   3403           00093     retlw b'00000011'
+0074   3403           00094     retlw b'00000011'
+0075   3403           00095     retlw b'00000011'
+0076   3403           00096     retlw b'00000011'
+                      00097     
+0077                  00098 DOS
+0077   0823           00099     movf numFila,0
+0078   0782           00100     addwf PCL,1
+0079   340E           00101     retlw b'00001110'
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+007A   3411           00102     retlw b'00010001'
+007B   3401           00103     retlw b'00000001'
+007C   3402           00104     retlw b'00000010'
+007D   3404           00105     retlw b'00000100'
+007E   3408           00106     retlw b'00001000'
+007F   3410           00107     retlw b'00010000'
+0080   341F           00108     retlw b'00011111'
+                      00109 
+0081                  00110 TRES
+0081   0823           00111     movf numFila,0
+0082   0782           00112     addwf PCL,1
+0083   341F           00113     retlw b'00011111'
+0084   3401           00114     retlw b'00000001'
+0085   3401           00115     retlw b'00000001'
+0086   3406           00116     retlw b'00000110'
+0087   3401           00117     retlw b'00000001'
+0088   3401           00118     retlw b'00000001'
+0089   3411           00119     retlw b'00010001'
+008A   340E           00120     retlw b'00001110'
+                      00121     
+008B                  00122 CUATRO
+008B   0823           00123     movf numFila,0
+008C   0782           00124     addwf PCL,1
+008D   3402           00125     retlw b'00000010'
+008E   3406           00126     retlw b'00000110'
+008F   340A           00127     retlw b'00001010'
+0090   3412           00128     retlw b'00010010'
+0091   341F           00129     retlw b'00011111'
+0092   3402           00130     retlw b'00000010'
+0093   3402           00131     retlw b'00000010'
+0094   3402           00132     retlw b'00000010'
+                      00133     
+0095                  00134 CINCO
+0095   0823           00135     movf numFila,0
+0096   0782           00136     addwf PCL,1
+0097   341F           00137     retlw b'00011111'
+0098   3410           00138     retlw b'00010000'
+0099   3410           00139     retlw b'00010000'
+009A   341E           00140     retlw b'00011110'
+009B   3401           00141     retlw b'00000001'
+009C   3401           00142     retlw b'00000001'
+009D   3411           00143     retlw b'00010001'
+009E   340E           00144     retlw b'00001110'
+                      00145     
+009F                  00146 SEIS
+009F   0823           00147     movf numFila,0
+00A0   0782           00148     addwf PCL,1
+00A1   340E           00149     retlw b'00001110'
+00A2   3410           00150     retlw b'00010000'
+00A3   3410           00151     retlw b'00010000'
+00A4   341E           00152     retlw b'00011110'
+00A5   3411           00153     retlw b'00010001'
+00A6   3411           00154     retlw b'00010001'
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  6
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00A7   3411           00155     retlw b'00010001'
+00A8   340E           00156     retlw b'00001110'
+                      00157     
+00A9                  00158 SIETE
+00A9   0823           00159     movf numFila,0
+00AA   0782           00160     addwf PCL,1
+00AB   341F           00161     retlw b'00011111'
+00AC   3401           00162     retlw b'00000001'
+00AD   3401           00163     retlw b'00000001'
+00AE   3402           00164     retlw b'00000010'
+00AF   3404           00165     retlw b'00000100'
+00B0   3404           00166     retlw b'00000100'
+00B1   3404           00167     retlw b'00000100'
+00B2   3404           00168     retlw b'00000100'
+                      00169     
+00B3                  00170 OCHO
+00B3   0823           00171     movf numFila,0
+00B4   0782           00172     addwf PCL,1
+00B5   340E           00173     retlw b'00001110'
+00B6   3411           00174     retlw b'00010001'
+00B7   3411           00175     retlw b'00010001'
+00B8   340E           00176     retlw b'00001110'
+00B9   3411           00177     retlw b'00010001'
+00BA   3411           00178     retlw b'00010001'
+00BB   3411           00179     retlw b'00010001'
+00BC   340E           00180     retlw b'00001110'
+                      00181     
+00BD                  00182 NUEVE
+00BD   0823           00183     movf numFila,0
+00BE   0782           00184     addwf PCL,1
+00BF   340E           00185     retlw b'00001110'
+00C0   3411           00186     retlw b'00010001'
+00C1   3411           00187     retlw b'00010001'
+00C2   3411           00188     retlw b'00010001'
+00C3   340F           00189     retlw b'00001111'
+00C4   3401           00190     retlw b'00000001'
+00C5   3401           00191     retlw b'00000001'
+00C6   340E           00192     retlw b'00001110'
+                      00193     
+00C7                  00194 DOSPT
+00C7   0823           00195     movf numFila,0
+00C8   0782           00196     addwf PCL,1
+00C9   340E           00197     retlw b'00001110'
+00CA   340E           00198     retlw b'00001110'
+00CB   340E           00199     retlw b'00001110'
+00CC   3400           00200     retlw b'00000000'
+00CD   3400           00201     retlw b'00000000'
+00CE   340E           00202     retlw b'00001110'
+00CF   340E           00203     retlw b'00001110'
+00D0   340E           00204     retlw b'00001110'
+                      00205     
+00D1                  00206 PTCOMA
+00D1   0823           00207     movf numFila,0
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  7
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00D2   0782           00208     addwf PCL,1
+00D3   3400           00209     retlw b'00000000'
+00D4   3400           00210     retlw b'00000000'
+00D5   3403           00211     retlw b'00000011'
+00D6   3403           00212     retlw b'00000011'
+00D7   3400           00213     retlw b'00000000'
+00D8   3403           00214     retlw b'00000011'
+00D9   3401           00215     retlw b'00000001'
+00DA   3402           00216     retlw b'00000010'
+                      00217     
+00DB                  00218 MENOR
+00DB   0823           00219     movf numFila,0
+00DC   0782           00220     addwf PCL,1
+00DD   3400           00221     retlw b'00000000'
+00DE   3402           00222     retlw b'00000010'
+00DF   3406           00223     retlw b'00000110'
+00E0   340C           00224     retlw b'00001100'
+00E1   3418           00225     retlw b'00011000'
+00E2   340C           00226     retlw b'00001100'
+00E3   3406           00227     retlw b'00000110'
+00E4   3402           00228     retlw b'00000010'
+                      00229     
+00E5                  00230 IGUAL
+00E5   0823           00231     movf numFila,0
+00E6   0782           00232     addwf PCL,1
+00E7   3400           00233     retlw b'00000000'
+00E8   3400           00234     retlw b'00000000'
+00E9   341F           00235     retlw b'00011111'
+00EA   341F           00236     retlw b'00011111'
+00EB   3400           00237     retlw b'00000000'
+00EC   341F           00238     retlw b'00011111'
+00ED   341F           00239     retlw b'00011111'
+00EE   3400           00240     retlw b'00000000'
+                      00241     
+                      00242 
+                      00243     
+                      00244     
+                      00245 
+                      00246     
+00EF                  00247 HABILITARFILA
+00EF   0823           00248     movf numFila,0
+00F0   0782           00249     addwf PCL,1
+00F1   2???           00250     goto FILA0
+00F2   2???           00251     goto FILA1
+00F3   2???           00252     goto FILA2
+00F4   2???           00253     goto FILA3
+00F5   2???           00254     goto FILA4
+00F6   2???           00255     goto FILA5
+00F7   2???           00256     goto FILA6
+00F8   2???           00257     goto FILA7
+                      00258     
+00F9                  00259 FILA0
+00F9   1008           00260     bcf PORTD,0
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  8
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00FA   0008           00261     return
+                      00262 
+00FB                  00263 FILA1
+00FB   1088           00264     bcf PORTD,1
+00FC   0008           00265     return
+                      00266     
+00FD                  00267 FILA2
+00FD   1108           00268     bcf PORTD,2
+00FE   0008           00269     return
+                      00270     
+00FF                  00271 FILA3
+00FF   1188           00272     bcf PORTD,3
+0100   0008           00273     return
+                      00274     
+0101                  00275 FILA4
+0101   1208           00276     bcf PORTD,4
+0102   0008           00277     return
+                      00278     
+0103                  00279 FILA5
+0103   1288           00280     bcf PORTD,5
+0104   0008           00281     return
+                      00282     
+0105                  00283 FILA6
+0105   1308           00284     bcf PORTD,6
+0106   0008           00285     return
+                      00286     
+0107                  00287 FILA7
+0107   1388           00288     bcf PORTD,7
+0108   0008           00289     return
+                      00089 
+Warning[205]: Found directive in column 1. (end)
+27E1 3FFF             00090 end
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE  9
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+ABDEN                             00000000
+ABDOVF                            00000007
+ACKDT                             00000005
+ACKEN                             00000004
+ACKSTAT                           00000006
+ADCON0                            0000001F
+ADCON1                            0000009F
+ADCS0                             00000006
+ADCS1                             00000007
+ADDEN                             00000003
+ADFM                              00000007
+ADIE                              00000006
+ADIF                              00000006
+ADON                              00000000
+ADRESH                            0000001E
+ADRESL                            0000009E
+ANS0                              00000000
+ANS1                              00000001
+ANS10                             00000002
+ANS11                             00000003
+ANS12                             00000004
+ANS13                             00000005
+ANS2                              00000002
+ANS3                              00000003
+ANS4                              00000004
+ANS5                              00000005
+ANS6                              00000006
+ANS7                              00000007
+ANS8                              00000000
+ANS9                              00000001
+ANSEL                             00000188
+ANSELH                            00000189
+BAUDCTL                           00000187
+BCLIE                             00000003
+BCLIF                             00000003
+BF                                00000000
+BRG0                              00000000
+BRG1                              00000001
+BRG10                             00000002
+BRG11                             00000003
+BRG12                             00000004
+BRG13                             00000005
+BRG14                             00000006
+BRG15                             00000007
+BRG16                             00000003
+BRG2                              00000002
+BRG3                              00000003
+BRG4                              00000004
+BRG5                              00000005
+BRG6                              00000006
+BRG7                              00000007
+BRG8                              00000000
+BRG9                              00000001
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 10
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+BRGH                              00000002
+BUSCARFILA                        00000052
+C                                 00000000
+C1CH0                             00000000
+C1CH1                             00000001
+C1IE                              00000005
+C1IF                              00000005
+C1OE                              00000005
+C1ON                              00000007
+C1OUT                             00000006
+C1POL                             00000004
+C1R                               00000002
+C1RSEL                            00000005
+C1SEN                             00000005
+C2CH0                             00000000
+C2CH1                             00000001
+C2IE                              00000006
+C2IF                              00000006
+C2OE                              00000005
+C2ON                              00000007
+C2OUT                             00000006
+C2POL                             00000004
+C2R                               00000002
+C2REN                             00000004
+C2RSEL                            00000004
+C2SYNC                            00000000
+CAMBIOFILA                        0000004C
+CARGARBIT                         0000003C
+CARGARCARACTER                    0000003A
+CARGARDATOS                       0000002D
+CCP1CON                           00000017
+CCP1IE                            00000002
+CCP1IF                            00000002
+CCP1M0                            00000000
+CCP1M1                            00000001
+CCP1M2                            00000002
+CCP1M3                            00000003
+CCP1X                             00000005
+CCP1Y                             00000004
+CCP2CON                           0000001D
+CCP2IE                            00000000
+CCP2IF                            00000000
+CCP2M0                            00000000
+CCP2M1                            00000001
+CCP2M2                            00000002
+CCP2M3                            00000003
+CCP2X                             00000005
+CCP2Y                             00000004
+CCPR1                             00000015
+CCPR1H                            00000016
+CCPR1L                            00000015
+CCPR2                             0000001B
+CCPR2H                            0000001C
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 11
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+CCPR2L                            0000001B
+CERO                              00000063
+CHS0                              00000002
+CHS1                              00000003
+CHS2                              00000004
+CHS3                              00000005
+CINCO                             00000095
+CKE                               00000006
+CKP                               00000004
+CM1CON0                           00000107
+CM2CON0                           00000108
+CM2CON1                           00000109
+COMIENZO                          00000005
+CREN                              00000004
+CSRC                              00000007
+CUATRO                            0000008B
+D                                 00000005
+DATA_ADDRESS                      00000005
+DC                                00000001
+DC1B0                             00000004
+DC1B1                             00000005
+DC2B0                             00000004
+DC2B1                             00000005
+DOS                               00000077
+DOSPT                             000000C7
+D_A                               00000005
+D_NOT_A                           00000005
+ECCPAS                            0000009C
+ECCPAS0                           00000004
+ECCPAS1                           00000005
+ECCPAS2                           00000006
+ECCPASE                           00000007
+EEADR                             0000010D
+EEADRH                            0000010F
+EECON1                            0000018C
+EECON2                            0000018D
+EEDAT                             0000010C
+EEDATA                            0000010C
+EEDATH                            0000010E
+EEIE                              00000004
+EEIF                              00000004
+EEPGD                             00000007
+ENVIARBIT                         0000003F
+ESPERA                            00000024
+F                                 00000001
+FERR                              00000002
+FILA0                             000000F9
+FILA1                             000000FB
+FILA2                             000000FD
+FILA3                             000000FF
+FILA4                             00000101
+FILA5                             00000103
+FILA6                             00000105
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 12
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+FILA7                             00000107
+FINENVIO                          00000042
+FSR                               00000004
+FVREN                             00000000
+GCEN                              00000007
+GIE                               00000007
+GO                                00000001
+GO_DONE                           00000001
+GO_NOT_DONE                       00000001
+HABILITARFILA                     000000EF
+HTS                               00000002
+I2C_DATA                          00000005
+I2C_READ                          00000002
+I2C_START                         00000003
+I2C_STOP                          00000004
+IGUAL                             000000E5
+INDF                              00000000
+INTCON                            0000000B
+INTE                              00000004
+INTEDG                            00000006
+INTERRUPCIONES                    00000026
+INTF                              00000001
+IOCB                              00000096
+IOCB0                             00000000
+IOCB1                             00000001
+IOCB2                             00000002
+IOCB3                             00000003
+IOCB4                             00000004
+IOCB5                             00000005
+IOCB6                             00000006
+IOCB7                             00000007
+IRCF0                             00000004
+IRCF1                             00000005
+IRCF2                             00000006
+IRP                               00000007
+LTS                               00000001
+MC1OUT                            00000007
+MC2OUT                            00000006
+MENOR                             000000DB
+MSK                               00000093
+MSK0                              00000000
+MSK1                              00000001
+MSK2                              00000002
+MSK3                              00000003
+MSK4                              00000004
+MSK5                              00000005
+MSK6                              00000006
+MSK7                              00000007
+NOT_A                             00000005
+NOT_ADDRESS                       00000005
+NOT_BO                            00000000
+NOT_BOR                           00000000
+NOT_DONE                          00000001
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 13
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+NOT_PD                            00000003
+NOT_POR                           00000001
+NOT_RBPU                          00000007
+NOT_RC8                           00000006
+NOT_T1SYNC                        00000002
+NOT_TO                            00000004
+NOT_TX8                           00000006
+NOT_W                             00000002
+NOT_WRITE                         00000002
+NUEVE                             000000BD
+OCHO                              000000B3
+OERR                              00000001
+OPTION_REG                        00000081
+OSCCON                            0000008F
+OSCTUNE                           00000090
+OSFIE                             00000007
+OSFIF                             00000007
+OSTS                              00000003
+P                                 00000004
+P1M0                              00000006
+P1M1                              00000007
+PCL                               00000002
+PCLATH                            0000000A
+PCON                              0000008E
+PDC0                              00000000
+PDC1                              00000001
+PDC2                              00000002
+PDC3                              00000003
+PDC4                              00000004
+PDC5                              00000005
+PDC6                              00000006
+PEIE                              00000006
+PEN                               00000002
+PIE1                              0000008C
+PIE2                              0000008D
+PIR1                              0000000C
+PIR2                              0000000D
+PONERCERO                         00000048
+PONERUNO                          0000004A
+PORTA                             00000005
+PORTB                             00000006
+PORTC                             00000007
+PORTD                             00000008
+PORTE                             00000009
+PR2                               00000092
+PRSEN                             00000007
+PS0                               00000000
+PS1                               00000001
+PS2                               00000002
+PSA                               00000003
+PSSAC0                            00000002
+PSSAC1                            00000003
+PSSBD0                            00000000
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 14
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+PSSBD1                            00000001
+PSTRCON                           0000009D
+PTCOMA                            000000D1
+PULSR                             00000002
+PULSS                             00000003
+PWM1CON                           0000009B
+R                                 00000002
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RA5                               00000005
+RA6                               00000006
+RA7                               00000007
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RC0                               00000000
+RC1                               00000001
+RC2                               00000002
+RC3                               00000003
+RC4                               00000004
+RC5                               00000005
+RC6                               00000006
+RC7                               00000007
+RC8_9                             00000006
+RC9                               00000006
+RCD8                              00000000
+RCEN                              00000003
+RCIDL                             00000006
+RCIE                              00000005
+RCIF                              00000005
+RCREG                             0000001A
+RCSTA                             00000018
+RD                                00000000
+RD0                               00000000
+RD1                               00000001
+RD2                               00000002
+RD3                               00000003
+RD4                               00000004
+RD5                               00000005
+RD6                               00000006
+RD7                               00000007
+RE0                               00000000
+RE1                               00000001
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 15
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+RE2                               00000002
+RE3                               00000003
+READ_WRITE                        00000002
+RP0                               00000005
+RP1                               00000006
+RSEN                              00000001
+RX9                               00000006
+RX9D                              00000000
+R_NOT_W                           00000002
+R_W                               00000002
+S                                 00000003
+SBOREN                            00000004
+SCKP                              00000004
+SCS                               00000000
+SEIS                              0000009F
+SEN                               00000000
+SENDB                             00000003
+SIETE                             000000A9
+SMP                               00000007
+SPBRG                             00000099
+SPBRGH                            0000009A
+SPEN                              00000007
+SR0                               00000006
+SR1                               00000007
+SRCON                             00000185
+SREN                              00000005
+SSPADD                            00000093
+SSPBUF                            00000013
+SSPCON                            00000014
+SSPCON2                           00000091
+SSPEN                             00000005
+SSPIE                             00000003
+SSPIF                             00000003
+SSPM0                             00000000
+SSPM1                             00000001
+SSPM2                             00000002
+SSPM3                             00000003
+SSPMSK                            00000093
+SSPOV                             00000006
+SSPSTAT                           00000094
+STATUS                            00000003
+STRA                              00000000
+STRB                              00000001
+STRC                              00000002
+STRD                              00000003
+STRSYNC                           00000004
+SWDTEN                            00000000
+SYNC                              00000004
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0SE                              00000004
+T1CKPS0                           00000004
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 16
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+T1CKPS1                           00000005
+T1CON                             00000010
+T1GINV                            00000007
+T1GIV                             00000007
+T1GSS                             00000001
+T1INSYNC                          00000002
+T1OSCEN                           00000003
+T1SYNC                            00000002
+T2CKPS0                           00000000
+T2CKPS1                           00000001
+T2CON                             00000012
+TABLA                             00000054
+TMR0                              00000001
+TMR0IE                            00000005
+TMR0IF                            00000002
+TMR1                              0000000E
+TMR1CS                            00000001
+TMR1GE                            00000006
+TMR1H                             0000000F
+TMR1IE                            00000000
+TMR1IF                            00000000
+TMR1L                             0000000E
+TMR1ON                            00000000
+TMR2                              00000011
+TMR2IE                            00000001
+TMR2IF                            00000001
+TMR2ON                            00000002
+TOUTPS0                           00000003
+TOUTPS1                           00000004
+TOUTPS2                           00000005
+TOUTPS3                           00000006
+TRES                              00000081
+TRISA                             00000085
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISA5                            00000005
+TRISA6                            00000006
+TRISA7                            00000007
+TRISB                             00000086
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+TRISC                             00000087
+TRISC0                            00000000
+TRISC1                            00000001
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 17
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TRISC2                            00000002
+TRISC3                            00000003
+TRISC4                            00000004
+TRISC5                            00000005
+TRISC6                            00000006
+TRISC7                            00000007
+TRISD                             00000088
+TRISD0                            00000000
+TRISD1                            00000001
+TRISD2                            00000002
+TRISD3                            00000003
+TRISD4                            00000004
+TRISD5                            00000005
+TRISD6                            00000006
+TRISD7                            00000007
+TRISE                             00000089
+TRISE0                            00000000
+TRISE1                            00000001
+TRISE2                            00000002
+TRISE3                            00000003
+TRMT                              00000001
+TUN0                              00000000
+TUN1                              00000001
+TUN2                              00000002
+TUN3                              00000003
+TUN4                              00000004
+TX8_9                             00000006
+TX9                               00000006
+TX9D                              00000000
+TXD8                              00000000
+TXEN                              00000005
+TXIE                              00000004
+TXIF                              00000004
+TXREG                             00000019
+TXSTA                             00000098
+UA                                00000001
+ULPWUE                            00000005
+ULPWUIE                           00000002
+ULPWUIF                           00000002
+UNO                               0000006D
+VCFG0                             00000004
+VCFG1                             00000005
+VR0                               00000000
+VR1                               00000001
+VR2                               00000002
+VR3                               00000003
+VRCON                             00000097
+VREN                              00000007
+VROE                              00000006
+VRR                               00000005
+VRSS                              00000004
+W                                 00000000
+WCOL                              00000007
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 18
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+WDTCON                            00000105
+WDTPS0                            00000001
+WDTPS1                            00000002
+WDTPS2                            00000003
+WDTPS3                            00000004
+WPUB                              00000095
+WPUB0                             00000000
+WPUB1                             00000001
+WPUB2                             00000002
+WPUB3                             00000003
+WPUB4                             00000004
+WPUB5                             00000005
+WPUB6                             00000006
+WPUB7                             00000007
+WR                                00000001
+WREN                              00000002
+WRERR                             00000003
+WUE                               00000001
+Z                                 00000002
+_BOR21V                           00003EFF
+_BOR40V                           00003FFF
+_BOR4V_BOR21V                     00003EFF
+_BOR4V_BOR40V                     00003FFF
+_BOREN_NSLEEP                     00003EFF
+_BOREN_OFF                        00003CFF
+_BOREN_ON                         00003FFF
+_BOREN_SBODEN                     00003DFF
+_BOR_NSLEEP                       00003EFF
+_BOR_OFF                          00003CFF
+_BOR_ON                           00003FFF
+_BOR_SBODEN                       00003DFF
+_CONFIG1                          00002007
+_CONFIG2                          00002008
+_CPD_OFF                          00003FFF
+_CPD_ON                           00003F7F
+_CP_OFF                           00003FFF
+_CP_ON                            00003FBF
+_DEBUG_OFF                        00003FFF
+_DEBUG_ON                         00001FFF
+_DEVID1                           00002006
+_EC_OSC                           00003FFB
+_EXTRC                            00003FFF
+_EXTRCIO                          00003FFE
+_EXTRC_OSC_CLKOUT                 00003FFF
+_EXTRC_OSC_NOCLKOUT               00003FFE
+_FCMEN_OFF                        000037FF
+_FCMEN_ON                         00003FFF
+_FOSC_EC                          00003FFB
+_FOSC_EXTRC_CLKOUT                00003FFF
+_FOSC_EXTRC_NOCLKOUT              00003FFE
+_FOSC_HS                          00003FFA
+_FOSC_INTRC_CLKOUT                00003FFD
+_FOSC_INTRC_NOCLKOUT              00003FFC
+MPASM 5.66            PROEYCTOFINAL-V2.1.ASM   6-7-2016  23:50:47         PAGE 19
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_FOSC_LP                          00003FF8
+_FOSC_XT                          00003FF9
+_HS_OSC                           00003FFA
+_IDLOC0                           00002000
+_IDLOC1                           00002001
+_IDLOC2                           00002002
+_IDLOC3                           00002003
+_IESO_OFF                         00003BFF
+_IESO_ON                          00003FFF
+_INTOSC                           00003FFD
+_INTOSCIO                         00003FFC
+_INTRC_OSC_CLKOUT                 00003FFD
+_INTRC_OSC_NOCLKOUT               00003FFC
+_LP_OSC                           00003FF8
+_LVP_OFF                          00002FFF
+_LVP_ON                           00003FFF
+_MCLRE_OFF                        00003FDF
+_MCLRE_ON                         00003FFF
+_PWRTE_OFF                        00003FFF
+_PWRTE_ON                         00003FEF
+_WDTE_OFF                         00003FF7
+_WDTE_ON                          00003FFF
+_WDT_OFF                          00003FF7
+_WDT_ON                           00003FFF
+_WRT_1FOURTH                      00003BFF
+_WRT_256                          00003DFF
+_WRT_HALF                         000039FF
+_WRT_OFF                          00003FFF
+_XT_OSC                           00003FF9
+__16F887                          00000001
+anchoChar                         00000006
+caracteres                        00000005
+carga                             00000006
+char1                             00000028
+char2                             00000027
+char3                             00000026
+char4                             00000025
+char5                             00000024
+clk                               00000001
+dato                              00000002
+filAux                            00000021
+latch                             00000003
+mult                              00000029
+numBits                           00000022
+numChar                           00000020
+numFila                           00000023
+
+Errors   :     0
+Warnings :     3 reported,     0 suppressed
+Messages :     7 reported,     0 suppressed
+
+

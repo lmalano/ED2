@@ -1,0 +1,11 @@
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 20 : Found directive in column 1. (org)
+Warning[203] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 21 : Found opcode in column 1. (goto)
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 22 : Found directive in column 1. (org)
+Warning[203] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 23 : Found opcode in column 1. (goto)
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 34 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 36 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 37 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 38 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 39 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 76 : Using default destination of 1 (file).
+Warning[205] D:\ELECTRONICA DIGITAL 2\PROYECTOS DE EJEMPLO\ADCONNUMEROS.X\ADCONNUMEROS.ASM 194 : Found directive in column 1. (end)
